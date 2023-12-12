@@ -1,0 +1,9 @@
+# github S3 code
+resource "aws_s3_bucket" "example" {
+  bucket = "am-bucket"
+
+  tags = {
+    Name        = "My bucket01"
+    Environment = "Dev"
+  }
+}
